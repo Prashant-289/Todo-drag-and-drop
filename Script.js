@@ -1,6 +1,6 @@
 const addButton = document.querySelector(".btn");
 const taskInput = document.getElementById("task");
-const todoBox = document.querySelector(".box"); // Assuming this is To-Do column
+const todoBox = document.querySelector(".box");
 
 addButton.addEventListener("click", () => {
   const taskText = taskInput.value.trim();
@@ -12,6 +12,6 @@ addButton.addEventListener("click", () => {
 
     todoBox.appendChild(newCard);
 
-    taskInput.value = ""; // clear input
+    taskInput.value = "";
   }
 });
