@@ -102,6 +102,8 @@ input{
 }
 .cards h3{
     font-weight: 90;
+    font-size: 2vh;
+    
 }
 .cards.over{
     border: 1px solid gray;
@@ -116,3 +118,34 @@ input{
   z-index: 1000;
   cursor: grabbing;
 }
+.btn{
+    padding: 5px 5px;
+    background-color: rgb(206, 199, 199);
+    margin: 10px;
+    border-radius: 10px;
+    font-size: 20px;
+    color: black;
+    
+}
+.box h1{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: gray;
+}
+.box1 h1{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: gray;
+}
+.box2 h1{
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    background-color: gray;
+}
+
+.first{
+    display: none;
+ }
