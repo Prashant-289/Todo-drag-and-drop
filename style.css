@@ -25,7 +25,7 @@ body {
     
     height: 45vh;
     width: 30%;
-   
+    overflow:auto;
     background-color: rgb(245, 245, 245);
     border-radius: 10px;
 
@@ -34,7 +34,7 @@ body {
     
     height: 45vh;
     width: 30%;
-    
+    overflow:auto;
     background-color: rgb(245, 245, 245);
     border-radius: 10px;
 
@@ -43,10 +43,20 @@ body {
     
     height: 45vh;
     width: 30%;
-   
+    overflow:auto;
     background-color: rgb(245, 245, 245);
     border-radius: 10px;
 }
+.box::-webkit-scrollbar {
+  display: none;
+}
+.box1::-webkit-scrollbar {
+  display: none;
+}
+.box2::-webkit-scrollbar {
+  display: none;
+}
+
 .boxcontainer{
     display: flex;
     
@@ -68,6 +78,7 @@ body {
     font-size: 1.5vw;
     font-weight: 100;
     text-align: center;
+    
 }
 .container h1{
     text-align: center;
@@ -86,8 +97,22 @@ input{
     margin: 5px;
     border-radius: 10px;
     font-size: 1vw;
-    
+    cursor: grab;
+    overflow-wrap: break-word;
 }
 .cards h3{
     font-weight: 90;
+}
+.cards.over{
+    border: 1px solid gray;
+    
+}
+.cards:active {
+  cursor: grabbing;
+}
+
+.dragging {
+  position: relative;
+  z-index: 1000;
+  cursor: grabbing;
 }
